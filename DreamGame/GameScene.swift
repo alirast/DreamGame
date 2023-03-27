@@ -9,6 +9,13 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
+//FIXME: - maybe without sounds
+    let swapSound = SKAction.playSoundFileNamed("swap.wav", waitForCompletion: false)
+    let invalidSwapSound = SKAction.playSoundFileNamed("error.wav", waitForCompletion: false)
+    let matchSound = SKAction.playSoundFileNamed("match.wav", waitForCompletion: false)
+    let fallingItemSound = SKAction.playSoundFileNamed("falling.wav", waitForCompletion: false)
+    let addItemSound = SKAction.playSoundFileNamed("add.wav", waitForCompletion: false)
+    
     override init(size: CGSize) {
         super.init(size: size)
         
