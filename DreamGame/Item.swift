@@ -7,7 +7,7 @@
 
 import SpriteKit
 
-enum ItemType: Int {
+enum ItemType: Int, CustomStringConvertible {
     case unknown = 0
     case tea
     case cards
@@ -16,18 +16,25 @@ enum ItemType: Int {
     case pawn
     case shell
     
-    //rawValue
     var spriteName: String {
         let spriteNames = ["tea", "cards", "cookie", "cloudberry", "pawn", "shell"]
         return spriteNames[rawValue - 1]
     }
-//FIXME: - add highlighted items for assets
+//FIXME: - add highlighted items for assets + bigger
     var highlightedSpriteName: String {
         return spriteName + "-highlighted"
     }
+//FIXME: - remove force unwrap
+    static func random() -> ItemType {
+        return ItemType(rawValue: Int(arc4random_uniform(6)) + 1)!
+    }
+    
+    var description: String {
+        return spriteName
+    }
 }
 
-class Item {
+class Item: CustomStringConvertible {
     var column: Int
     var row: Int
     let itemType: ItemType
@@ -39,5 +46,8 @@ class Item {
         self.itemType = itemType
     }
     
+    var description: String {
+        return "type: \(itemType) column: \(column) row: \(row)"
+    }
     
 }
