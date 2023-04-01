@@ -19,7 +19,7 @@ class GameScene: SKScene {
     override init(size: CGSize) {
         super.init(size: size)
         
-        anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        anchorPoint = CGPoint(x: 0.5, y: 0.5) //center of screen
         let background = SKSpriteNode(imageNamed: "background")
         background.size = size
         addChild(background)

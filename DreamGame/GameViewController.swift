@@ -20,7 +20,7 @@ class GameViewController: UIViewController {
         }
         do {
             let player = try AVAudioPlayer(contentsOf: url)
-            player.numberOfLoops = -1
+            player.numberOfLoops = -1 //loop forever
             return player
         } catch {
             return nil
