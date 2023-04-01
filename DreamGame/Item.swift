@@ -34,7 +34,7 @@ enum ItemType: Int, CustomStringConvertible {
     }
 }
 
-class Item: CustomStringConvertible {
+class Item: CustomStringConvertible, Hashable {
     var column: Int
     var row: Int
     let itemType: ItemType
@@ -49,5 +49,14 @@ class Item: CustomStringConvertible {
     var description: String {
         return "type: \(itemType) column: \(column) row: \(row)"
     }
+    
+    var hashValue: Int {
+        return row * 10 + column
+    }
+    
+    static func == (lhs: Item, rhs: Item) -> Bool {
+        return lhs.column == rhs.column && lhs.row == rhs.row
+    }
+    
     
 }
