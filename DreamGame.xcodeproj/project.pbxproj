@@ -15,6 +15,7 @@
 		4F744B5C29CF7B5200E48353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F744B5A29CF7B5200E48353 /* LaunchScreen.storyboard */; };
 		4F8DF18F29D8982F00A2CF55 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DF18E29D8982F00A2CF55 /* Item.swift */; };
 		4F8DF19129D8A28400A2CF55 /* LevelArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DF19029D8A28400A2CF55 /* LevelArray.swift */; };
+		4F8DF19329D8A88A00A2CF55 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8DF19229D8A88A00A2CF55 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		4F744B5B29CF7B5200E48353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F8DF18E29D8982F00A2CF55 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4F8DF19029D8A28400A2CF55 /* LevelArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelArray.swift; sourceTree = "<group>"; };
+		4F8DF19229D8A88A00A2CF55 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4F744B4B29CF7B5100E48353 /* AppDelegate.swift */,
 				4F744B5129CF7B5100E48353 /* GameScene.swift */,
 				4F8DF18E29D8982F00A2CF55 /* Item.swift */,
+				4F8DF19229D8A88A00A2CF55 /* Level.swift */,
 				4F8DF19029D8A28400A2CF55 /* LevelArray.swift */,
 				4F744B5329CF7B5100E48353 /* GameViewController.swift */,
 				4F744B5529CF7B5100E48353 /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8DF19329D8A88A00A2CF55 /* Level.swift in Sources */,
 				4F8DF18F29D8982F00A2CF55 /* Item.swift in Sources */,
 				4F744B5229CF7B5100E48353 /* GameScene.swift in Sources */,
 				4F8DF19129D8A28400A2CF55 /* LevelArray.swift in Sources */,
